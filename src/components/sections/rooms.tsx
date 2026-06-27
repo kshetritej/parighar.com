@@ -26,7 +26,7 @@ export default function Rooms() {
             <p className="text-xs tracking-[0.22em] uppercase text-terra mb-4 font-medium">
               Your stay
             </p>
-            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.15] text-green-dark text-pretty scroll-mt-24">
+            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] leading-[1.15] text-green-dark text-pretty scroll-mt-24">
               Comfortable.
               <br />
               Clean. Honest.
@@ -64,7 +64,7 @@ export default function Rooms() {
                 <p className="text-xs tracking-[0.12em] uppercase text-terra mb-1">
                   Check-in
                 </p>
-                <p className="font-serif text-[1.2rem] text-green-dark font-bold tabular-nums">
+                <p className="font-serif text-[1.2rem] text-green-dark tabular-nums">
                   {checkin}
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default function Rooms() {
                 <p className="text-xs tracking-[0.12em] uppercase text-terra mb-1">
                   Check-out
                 </p>
-                <p className="font-serif text-[1.2rem] text-green-dark font-bold tabular-nums">
+                <p className="font-serif text-[1.2rem] text-green-dark tabular-nums">
                   {checkout}
                 </p>
               </div>

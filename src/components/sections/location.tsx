@@ -46,7 +46,7 @@ export default function Location() {
                 <p className="text-xs tracking-[0.1em] uppercase text-white/70 mb-1">
                   Call or WhatsApp
                 </p>
-                <p className="font-serif text-[1.4rem] font-bold text-white">
+                <p className="font-serif text-[1.4rem] text-white">
                   +977 9816614735
                 </p>
               </address>
@@ -56,7 +56,7 @@ export default function Location() {
             <p className="text-xs tracking-[0.22em] uppercase text-terra mb-4 font-medium">
               Getting here
             </p>
-            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.15] text-green-dark text-pretty scroll-mt-24">
+            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] leading-[1.15] text-green-dark text-pretty scroll-mt-24">
               Closer Than
               <br />
               You Think

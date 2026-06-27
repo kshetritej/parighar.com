@@ -30,7 +30,7 @@ export default function ForWho() {
           </p>
         </Reveal>
         <Reveal>
-          <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.15] text-green-dark text-pretty scroll-mt-24">
+          <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] leading-[1.15] text-green-dark text-pretty scroll-mt-24">
             Your reason to come.<br />
             You&rsquo;ll find it here.
           </h2>
@@ -43,7 +43,7 @@ export default function ForWho() {
                 <p className="font-serif text-[3.5rem] font-light text-green/12 leading-none mb-2" aria-hidden="true">
                   {c.num}
                 </p>
-                <h3 className="font-serif text-[1.55rem] font-bold text-green-dark mb-3 text-pretty">
+                <h3 className="font-serif text-[1.55rem] text-green-dark mb-3 text-pretty">
                   {c.title}
                 </h3>
                 <p className="text-base text-green-dark/80 leading-[1.85] font-light break-words">

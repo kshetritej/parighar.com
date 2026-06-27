@@ -27,7 +27,7 @@ export default function Reviews() {
             <p className="text-xs tracking-[0.22em] uppercase text-gold mb-4 font-medium">
               Guest reviews
             </p>
-            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.15] text-white text-pretty scroll-mt-24">
+            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] leading-[1.15] text-white text-pretty scroll-mt-24">
               What Guests
               <br />
               Are Saying

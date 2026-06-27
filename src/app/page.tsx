@@ -10,6 +10,7 @@ import Reviews from "@/components/sections/reviews";
 import Location from "@/components/sections/location";
 import Cta from "@/components/sections/cta";
 import Footer from "@/components/sections/footer";
+import WhatsAppButton from "@/components/whatsapp-button";
 
 export default function Home() {
   const scrollToBooking = () => {
@@ -29,6 +30,7 @@ export default function Home() {
       <Location />
       <Cta />
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

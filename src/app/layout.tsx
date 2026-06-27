@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost } from "next/font/google";
+import { Instrument_Serif, Merriweather } from "next/font/google";
 import "./globals.css";
 
-const jost = Jost({
+const merriweather = Merriweather({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-jost",
+  weight: ["300", "400", "700", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-merriweather",
 });
 
-const cormorant = Cormorant_Garamond({
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400"],
   style: ["normal", "italic"],
-  variable: "--font-cormorant",
+  variable: "--font-instrument-serif",
 });
 
 const siteUrl = "https://parighar.com.np";
@@ -97,7 +98,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jost.variable} ${cormorant.variable} antialiased`}
+      className={`${merriweather.variable} ${instrumentSerif.variable} antialiased`}
       style={{ colorScheme: "dark" }}
     >
       <head>

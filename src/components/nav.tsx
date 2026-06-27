@@ -5,6 +5,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 export default function Nav({ onBook }: { onBook: () => void }) {
   const [solid, setSolid] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handler = () => setSolid(window.scrollY > 60);
@@ -52,7 +53,7 @@ export default function Nav({ onBook }: { onBook: () => void }) {
         </li>
       </ul>
 
-      <Sheet>
+      <Sheet open={open} onOpenChange={setOpen}>
         <SheetTrigger className="md:hidden text-white/90 cursor-pointer" aria-label="Menu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
             <path d="M3 6h18M3 12h18M3 18h18" />
@@ -64,13 +65,14 @@ export default function Nav({ onBook }: { onBook: () => void }) {
               <a
                 key={l.href}
                 href={l.href}
+                onClick={() => setOpen(false)}
                 className="text-white/90 no-underline text-sm tracking-[0.14em] uppercase focus-visible:ring-2 focus-visible:ring-gold focus-visible:outline-none"
               >
                 {l.label}
               </a>
             ))}
             <button
-              onClick={onBook}
+              onClick={() => { onBook(); setOpen(false); }}
               className="bg-green text-white text-sm tracking-[0.14em] uppercase px-5 py-3 rounded-sm border border-white/20 cursor-pointer font-sans mt-4 transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-gold focus-visible:outline-none"
             >
               Book Now

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Star } from "lucide-react";
 
 export default function Hero({ onBook }: { onBook: () => void }) {
@@ -8,19 +9,32 @@ export default function Hero({ onBook }: { onBook: () => void }) {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center px-8 pt-32 pb-20"
+      className="relative min-h-screen flex flex-col justify-center items-center text-center px-8 pt-32 pb-20 overflow-hidden"
       aria-label="Hero"
-      style={{
-        background:
-          "linear-gradient(to bottom, rgba(8,30,15,0.6) 0%, rgba(8,30,15,0.25) 45%, rgba(8,30,15,0.75) 100%), url('/images/booking-1.jpg') center/cover no-repeat",
-      }}
     >
+      <Image
+        src="/images/booking-1.jpg"
+        alt=""
+        fill
+        quality={100}
+        priority
+        sizes="100vw"
+        className="object-cover -z-10"
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(8,30,15,0.6) 0%, rgba(8,30,15,0.25) 45%, rgba(8,30,15,0.75) 100%)",
+        }}
+      />
       <p className="text-gold text-xs tracking-[0.25em] uppercase mb-6 font-medium">
         Gilung · Lamjung · Nepal
       </p>
-      <h1 className="font-serif text-[clamp(3.2rem,8vw,6.5rem)] font-bold text-white leading-[1.05] text-pretty mb-6">
+      <h1 className="font-serif text-[clamp(3.2rem,8vw,6.5rem)] text-white leading-[1.05] text-pretty mb-6">
         Escape to Gilung.<br />
-        Slow Down. <em className="italic text-gold not-italic font-serif">Breathe.</em>
+        Slow Down. <em className="italic text-white font-serif">Breathe.</em>
         <br />
         Belong.
       </h1>

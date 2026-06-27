@@ -42,7 +42,7 @@ export default function Experience() {
               </Reveal>
             </div>
             <div className="absolute top-6 left-6 bg-terra text-white px-4 py-3 text-center rounded-sm">
-              <strong className="block font-serif text-[2.2rem] font-bold leading-none">
+              <strong className="block font-serif text-[2.2rem] leading-none">
                 10
               </strong>
               <span className="text-xs tracking-[0.1em] uppercase opacity-85">
@@ -54,7 +54,7 @@ export default function Experience() {
             <p className="text-xs tracking-[0.22em] uppercase text-gold mb-4 font-medium">
               The experience
             </p>
-            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] font-bold leading-[1.15] text-white text-pretty scroll-mt-24">
+            <h2 className="font-serif text-[clamp(2rem,4vw,3rem)] leading-[1.15] text-white text-pretty scroll-mt-24">
               Not Your
               <br />
               Average Hotel Stay
