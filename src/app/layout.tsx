@@ -16,7 +16,7 @@ const instrumentSerif = Instrument_Serif({
   variable: "--font-instrument-serif",
 });
 
-const siteUrl = "https://parighar.com.np";
+const siteUrl = "https://parighar.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -13,7 +13,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
       aria-label="Hero"
     >
       <Image
-        src="/images/booking-61.jpg"
+        src="/hero-image.png"
         alt=""
         fill
         quality={100}
