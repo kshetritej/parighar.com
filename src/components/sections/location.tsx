@@ -47,7 +47,7 @@ export default function Location() {
                   Call or WhatsApp
                 </p>
                 <p className="font-serif text-[1.4rem] text-white">
-                  +977 9816614735
+                  +977 981-3413494
                 </p>
               </address>
             </div>

@@ -13,7 +13,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
       aria-label="Hero"
     >
       <Image
-        src="/images/booking-1.jpg"
+        src="/images/booking-61.jpg"
         alt=""
         fill
         quality={100}
@@ -29,9 +29,6 @@ export default function Hero({ onBook }: { onBook: () => void }) {
             "linear-gradient(to bottom, rgba(8,30,15,0.6) 0%, rgba(8,30,15,0.25) 45%, rgba(8,30,15,0.75) 100%)",
         }}
       />
-      <p className="text-gold text-xs tracking-[0.25em] uppercase mb-6 font-medium">
-        Gilung · Lamjung · Nepal
-      </p>
       <h1 className="font-serif text-[clamp(3.2rem,8vw,6.5rem)] text-white leading-[1.05] text-pretty mb-6">
         Escape to Gilung.<br />
         Slow Down. <em className="italic text-white font-serif">Breathe.</em>
@@ -42,7 +39,7 @@ export default function Hero({ onBook }: { onBook: () => void }) {
         A cozy mountain guest house where Himalayan views, home-grown food, and
         real Nepali village life are waiting for you.
       </p>
-      <div className="flex gap-4 flex-wrap justify-center mb-10">
+      <div className="flex gap-4 flex-wrap justify-center mb-8">
         <button
           onClick={onBook}
           className="bg-green text-white px-9 py-[0.95rem] no-underline text-sm tracking-[0.14em] uppercase rounded-sm font-sans border border-white/15 cursor-pointer hover:bg-green-mid hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-gold focus-visible:outline-none transition-[transform,colors] duration-200"
@@ -57,11 +54,11 @@ export default function Hero({ onBook }: { onBook: () => void }) {
         </a>
       </div>
       <div className="flex gap-3 flex-wrap justify-center items-center">
-        <span className="text-white/80 text-xs tracking-[0.06em]">
-          From {price.replace("NPR", "NPR").trim()} / night
+        <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 text-white/95 text-xs tracking-[0.06em] rounded-full px-4 py-1.5">
+          From {price.replace("NPR", "NPR").trim()}&nbsp;/&nbsp;night
         </span>
-        <Star className="text-gold w-3 h-3" aria-hidden="true" />
-        <span className={`text-white/80 text-xs tracking-[0.06em]`}>
+        <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/20 text-white/95 text-xs tracking-[0.06em] rounded-full px-4 py-1.5">
+          <Star className="w-3.5 h-3.5 text-gold" aria-hidden="true" />
           Rated 10&nbsp;/&nbsp;10 on Booking.com
         </span>
       </div>

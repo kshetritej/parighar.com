@@ -115,15 +115,9 @@ export default function RootLayout({
               description:
                 "A cozy mountain guest house in Gilung, Lamjung, Nepal. Enjoy Himalayan views, home-grown food, free WiFi, and authentic Nepali village life.",
               url: siteUrl,
-              telephone: "+977-9816614735",
+              telephone: "+977-981-3413494",
               email: "parighar@gmail.com",
-              image: [
-                `${siteUrl}/images/booking-1.jpg`,
-                `${siteUrl}/images/booking-2.jpg`,
-                `${siteUrl}/images/booking-3.jpg`,
-                `${siteUrl}/images/booking-4.jpg`,
-                `${siteUrl}/images/booking-5.jpg`,
-              ],
+              image: Array.from({ length: 78 }, (_, i) => `${siteUrl}/images/booking-${i + 1}.jpg`),
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Gilung-9, Kwholasothar Rural Municipality",
