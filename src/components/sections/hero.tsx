@@ -4,7 +4,11 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 
 export default function Hero({ onBook }: { onBook: () => void }) {
-  const price = new Intl.NumberFormat("en-US", { style: "currency", currency: "NPR", maximumFractionDigits: 0 }).format(2659);
+  const price = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "NPR",
+    maximumFractionDigits: 0,
+  }).format(1500);
 
   return (
     <section
@@ -30,7 +34,8 @@ export default function Hero({ onBook }: { onBook: () => void }) {
         }}
       />
       <h1 className="font-serif text-[clamp(3.2rem,8vw,6.5rem)] text-white leading-[1.05] text-pretty mb-6">
-        Escape to Gilung.<br />
+        Escape to Gilung.
+        <br />
         Slow Down. <em className="italic text-white font-serif">Breathe.</em>
         <br />
         Belong.
@@ -62,8 +67,13 @@ export default function Hero({ onBook }: { onBook: () => void }) {
           Rated 10&nbsp;/&nbsp;10 on Booking.com
         </span>
       </div>
-      <div className={`absolute bottom-8 left-1/2 -translate-x-1/2 w-[22px] h-[38px] border border-white/25 rounded-[11px] flex justify-center pt-1 motion-reduce:hidden`} aria-hidden="true">
-        <div className={`w-[3px] h-[7px] bg-white/50 rounded-full motion-safe:animate-[bob_1.6s_infinite]`} />
+      <div
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 w-[22px] h-[38px] border border-white/25 rounded-[11px] flex justify-center pt-1 motion-reduce:hidden`}
+        aria-hidden="true"
+      >
+        <div
+          className={`w-[3px] h-[7px] bg-white/50 rounded-full motion-safe:animate-[bob_1.6s_infinite]`}
+        />
       </div>
     </section>
   );
